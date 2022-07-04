@@ -1,0 +1,6 @@
+FROM nginx:1.17.2-alpine
+LABEL jesus.ed13@gmail.com
+ARG ENV=prod
+ENV ENV=${ENV}
+WORKDIR /app
+COPY ./dist /usr/share/nginx/html

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  dev:
+    container_name: react-app-dev
+    build:
+      context: .
+      args:
+        ENV: ${ENV}
+    volumes:
+      - './:/app'
+    ports:
+      - '3636:3636'
+  prod:
+    container_name: react-app-prod
+    build:
+      context: Dockerfile.prod
+      args:
+        ENV: ${ENV}
+    depends_on:
+      - dev

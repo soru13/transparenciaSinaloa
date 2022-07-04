@@ -1,0 +1,46 @@
+#modal-container-layout
+  width 100vw
+  height 100vh
+  position fixed
+  left 0
+  right 0
+  top 0
+  background-color rgba(0,0,0,0.4)
+  display grid
+  align-items center
+  justify-items center
+  z-index 1021
+.Modal
+  width 100vw
+  background  white
+  padding 20px
+  border-radius 20px
+  box-shadow 0 0 10px rgba(0,0,0,.4)
+  display grid
+  grid-template-rows 20% 80%
+  align-items center
+  height 100vh
+  justify-items center
+  .body-modal
+    display grid
+    justify-items center
+.header-modal
+  display grid
+  grid-template-columns 100vw
+  justify-items center
+.Modal-close
+  width 50px
+  height 50px
+  border-radius 50%
+  border none
+  background #171c30
+  color white
+  cursor pointer
+  justify-self center
+  position absolute
+  right 1%
+  top 1%
+.Modal-close:after
+  content "X"
+  font-weight bold
+  font-size 30px

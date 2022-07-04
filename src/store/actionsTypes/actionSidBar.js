@@ -1,0 +1,1 @@
+export const URL_SELECTED = 'URL_SELECTED';
