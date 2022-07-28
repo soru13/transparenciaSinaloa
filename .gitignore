@@ -8,7 +8,7 @@
 
 # production
 /_mocks_
-/dist
+
 
 # misc
 .DS_Store

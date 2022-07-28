@@ -1,0 +1,45 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+p {
+  margin: 0px;
+  width: 80%;
+}
+.react-container {
+  display: grid;
+  background-color: #f00;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 270px 1fr;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: repeat(4, 1fr);
+  height: 50%;
+  background: #fff;
+  align-self: center;
+  align-items: center;
+}
+
+.react-container-grilla {
+  display: grid;
+  background: #fff;
+  justify-content: center;
+  grid-template-rows: repeat(4, 100%);
+  overflow: auto;
+}
+.react-container-grilla .item {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
