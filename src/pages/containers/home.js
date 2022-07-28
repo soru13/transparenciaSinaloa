@@ -4,12 +4,9 @@ import PropTypes from 'prop-types';
 import HomeLayout from '../components/homeLayout';
 import { citas, getPatient, editAppoinment } from '../../store/actions/homeAction';
 import { closeModal, openModal } from '../../store/actions/generalsAction';
-import ReactComponent from '../../components/componentName/containers/ComponentName';
-import ModalContainer from '../../components/modal/containers/modal';
-import Modal from '../../components/modal/components/modal';
 import saveInput from '../../store/actions/generalsAction';
-
-
+import NavBarLayout from '../components/navBarLayout';
+import ReactComponent from '../../components/componentName/containers/ComponentName';
 class Home extends React.Component {
 
   constructor(props) {
@@ -38,21 +35,18 @@ class Home extends React.Component {
     const { modal, list } = this.props;
       return (
         <HomeLayout>
-          <Fragment>
-            <ReactComponent/>
-            {
-            modal.get('visibility') &&
-            <ModalContainer>
-              <Modal
-                handleClick={this.handleCloseModal}
-                action={modal.get('action')}
-                fullScreen={true}
-              >
-                <ReactComponent/>
-              </Modal>
-            </ModalContainer>
-          }
-         </Fragment>
+            <Fragment>
+                {/* <NavBarLayout>
+                    <Fragment>
+                        <span></span><div className="item"><a href="#introduccion">Introducción</a></div>
+                        <span></span><div className="item"><a href="#programas">Programas sociales</a></div>
+                        <span></span><div className="item"><a href="#">Conclusión</a></div>
+                        <span></span><div className="item"><a href="#">Sobre</a></div>
+                    </Fragment>
+                </NavBarLayout> */}
+                <ReactComponent></ReactComponent>
+            </Fragment>
+
         </HomeLayout>
       );
   }

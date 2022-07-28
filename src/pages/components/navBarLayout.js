@@ -5,7 +5,7 @@ import HandleError from '../../components/error/containers/handleError';
 function NavBarLayout({ children }) {
   return (
     <HandleError>
-      <section className="nav-bar-menu">
+      <section className="menu">
         {children}
       </section>
     </HandleError>
